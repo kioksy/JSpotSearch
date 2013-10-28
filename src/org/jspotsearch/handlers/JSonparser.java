@@ -21,12 +21,10 @@ public class JSonparser {
 			tokener = new JSONTokener(uri.toURL().openStream());
 			JSONObject root = new JSONObject(tokener);
 			jsonData = root.toString();
-		} catch (JSONException | IOException e) {
+		} catch (JSONException | IOException | URISyntaxException e) {
 			e.printStackTrace();
 		}
-		catch (URISyntaxException e1) {
-			e1.printStackTrace();
-		}
+
 		return jsonData;
 	}
 	
