@@ -6,7 +6,7 @@ public class Song {
 	private String artist;
 	private String album;
 	private String href;
-	private int duration;
+	private double duration;
 	
 	/**
 	 * If you ever feel like creating an empty instance of a song...
@@ -23,7 +23,7 @@ public class Song {
 	 * @param href link to the song (Spotify URI)
 	 * @param duration duration of song
 	 */
-	public Song(String track, String artist, String album, String href, int duration){
+	public Song(String track, String artist, String album, String href, double duration){
 		this.track = track;
 		this.artist = artist;
 		this.album = album;
@@ -91,11 +91,11 @@ public class Song {
 	 * Duration of the song
 	 * @return duration in seconds
 	 */
-	public int getDuration() {
+	public double getDuration() {
 		return duration;
 	}
 
-	public void setDuration(int duration) {
+	public void setDuration(double duration) {
 		this.duration = duration;
 	}
 
