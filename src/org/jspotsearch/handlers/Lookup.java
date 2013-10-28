@@ -1,5 +1,5 @@
 package org.jspotsearch.handlers;
 
-public class Lookup {
+public class Lookup extends JSonparser {
 
 }
