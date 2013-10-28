@@ -1,14 +1,20 @@
 package org.jspotsearch.storageobjects;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Album {
 	
 	private String album;
 	private String artist;
-	private List<Song> tracks = new ArrayList<Song>();
+	private List<Song> tracks;
 	private String yearOfRelease;
+	
+	public Album(String album, String artist, List<Song> tracks, String yearOfRelease){
+		this.album = album;
+		this.artist = artist;
+		this.tracks = tracks;
+		this.yearOfRelease = yearOfRelease;
+	}
 	
 	/**
 	 * The name of the album
