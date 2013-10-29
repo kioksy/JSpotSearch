@@ -14,7 +14,12 @@ public class MainTest extends JSonparser {
 		
 		ArrayList<Song> result = (ArrayList<Song>) search.searchSong("foo");
 		
-		System.out.println(result.get(22).toString());
+		ArrayList<Song> result2 = (ArrayList<Song>) search.searchSong("hey%20ho");
+		
+		for(int i=0; i<100; i++){
+			System.out.println(result.get(i));
+			System.out.println(result2.get(i));
+		}
 	}
 
 }

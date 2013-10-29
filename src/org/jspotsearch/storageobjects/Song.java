@@ -101,9 +101,9 @@ public class Song {
 
 	@Override
 	public String toString(){
-		return "Track : " + this.getTrack() + " by artist: " + this.getArtist() + 
-		" from the album: " + this.getAlbum() + " with the duration: " + this.getDuration()
-		+ " seconds";
+		return "Track : [" + this.getTrack() + "] artist: [" + this.getArtist() + 
+		"] album: [" + this.getAlbum() + "] duration: [" + this.getDuration()
+		+ "]";
 	}
 
 }
